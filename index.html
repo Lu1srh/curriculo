@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo – Seu Nome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <!-- Seção inicial (boas-vindas) -->
+    <section id="boas-vindas">
+        <h1>Bem-vindo!</h1>
+        <p>Antes de continuar, digite seu nome:</p>
+        <form id="form-nome">
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <!-- Currículo (inicialmente escondido) -->
+    <div id="curriculo" style="display: none;">
+        <header>
+            <h1 id="titulo-nome">Currículo</h1>
+            <p>Curriculo Thiago Venturini, Desenvolvedor Web/ Delphi | Estudante de Tecnologia</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Currículo parte principal -->
+        <main>
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Sou estudante de desenvolvimento web, atualmente trabalho com Delphi, porem com interesse em front-end.</p>
+                <img src="media/foto.jpg" alt="Foto de perfil" width="150">
+            </section>
+
+            <section id="formacao">
+                <h2>Formação Acadêmica</h2>
+                <article>
+                    <h3>Ciencia da computacao</h3>
+                    <p>Unoesc </p>
+                </article>
+                <article>
+                    <h3>Ensino Médio</h3>
+                    <p>Colegio Jesus Maria Jose</p>
+                </article>
+            </section>
+
+            <section id="experiencia">
+                <h2>Experiência</h2>
+                <article>
+                    <h3>Projeto Pessoal: Site de Receitas</h3>
+                    <p>Desenvolvimento de um portal de receitas utilizando HTML, CSS e JavaScript.</p>
+                </article>
+                <article>
+                    <h3>Porgramador Delphi</h3>
+                    <p>2 anos atuando como programador na linguagem</p>
+                </article>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:seunome@email.com">thethiagoventurini@gmail.com"</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com</a></p>
+                <p>GitHub: <a href="https://github.com/ThiagoVenturini/curriculo" target="_blank">https://github.com/ThiagoVenturini</a></p>
+            </section>
+        </main>
+        
+        <!-- Cabecalho com informacoes adicionais -->
+        <footer>
+            <p>&copy; 2025 - Currículo desenvolvido como atividade da disciplina Webapps.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
