@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Luis Ricardo Holscher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Luis Ricardo Holscher</h1>
+            <p class="subtitle">Desenvolvedor Web</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SOBRE -->
+        <section id="sobre" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2>Sobre Mim</h2>
+                        <p>Olá! Sou um desenvolvedor com mais de 3 anos de experiência em desenvolvimento front-end e back-end, estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente.</p>
+                        <p>Especializo-me em tecnologias modernas como HTML5, CSS3, JavaScript, React, Node.js e Python. Acredito que a combinação de design intuitivo e código limpo é fundamental para criar aplicações web de qualidade.</p>
+                        <button id="btn-saudacao" class="cta-button">Clique para uma saudação!</button>
+                        <div id="saudacao"></div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="media/foto.jpg" alt="Foto de perfil de Luis Ricardo Holscher - Desenvolvedor Web" width="300" height="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIA -->
+        <section id="experiencia" class="experience">
+            <div class="container">
+                <h2>Experiência Profissional</h2>
+                <article class="job">
+                    <h3>Desenvolvedor Front-end</h3>
+                    <p class="company">Startup</p>
+                    <ul>
+                        <li>Desenvolvimento de interfaces responsivas usando React e TypeScript</li>
+                        <li>Implementação de testes automatizados com Jest e Cypress</li>
+                        <li>Colaboração com equipes de design para criar experiências de usuário excepcionais</li>
+                        <li>Otimização de performance resultando em 40% de melhoria no tempo de carregamento</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="skills">
+            <div class="container">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Front-end</h3>
+                        <ol>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React & Redux</li>
+                            <li>Vue.js</li>
+                            <li>Sass/SCSS</li>
+                        </ol>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Back-end</h3>
+                        <ol>
+                            <li>Node.js & Express</li>
+                            <li>Python & Django</li>
+                            <li>PHP & Laravel</li>
+                            <li>APIs RESTful</li>
+                            <li>GraphQL</li>
+                        </ol>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Ferramentas</h3>
+                        <ol>
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>AWS</li>
+                            <li>Webpack</li>
+                            <li>Jest & Cypress</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="canvas-container">
+                    <h3>Visualização de Habilidades</h3>
+                    <canvas id="skillsChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Estou sempre aberto a novas oportunidades e projetos interessantes. Vamos conversar!</p>
+                        <div class="social-links">
+                            <a href="mailto:luis.holscher@email.com" class="social-link" aria-label="E-mail">📧 E-mail</a>
+                            <a href="https://linkedin.com/in/seuusuario" class="social-link" target="_blank" aria-label="LinkedIn">💼 LinkedIn</a>
+                            <a href="https://github.com/seuusuario" class="social-link" target="_blank" aria-label="GitHub">🐙 GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Deixe sua mensagem</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Enviar Mensagem</button>
+                        </form>
+                        <div id="form-response" class="form-response"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="visitor-counter">
+                <p>Visitantes: <span id="visitor-count">0</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
